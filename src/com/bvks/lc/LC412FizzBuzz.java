@@ -8,7 +8,7 @@ public class LC412FizzBuzz {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		for (String str : fizzBuzz(100)) {
-			System.out.println(str);
+			System.out.println(str); 
 		}
 	}
 
