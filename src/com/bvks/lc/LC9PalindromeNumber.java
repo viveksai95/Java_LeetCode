@@ -6,7 +6,7 @@ public class LC9PalindromeNumber {
 		isPalindromeV2(12344321);
 	}
 
-	// Time Complexity - O(log N)
+	// Time Complexity - O(log N) - Base 10
 	public static boolean isPalindrome(int x) {
 		int reversedInput = 0;
 		int temp = x;
