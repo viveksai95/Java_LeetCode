@@ -3,7 +3,7 @@ package com.bvks.lc;
 import java.util.ArrayList;
 import java.util.List;
 
-public class N412FizzBuzz {
+public class LC412FizzBuzz {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
