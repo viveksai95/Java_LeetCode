@@ -4,13 +4,34 @@ public class LC50Pow {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(myPow(2.0, -3));
+		System.out.println(myPow(100.0, 3));
+	}
+
+	// Reference Solution
+	// Time Complexity - O(log N) - Base 2
+	public static double myPow(double x, int n) {
+		double powerProduct = 1.0;
+		long num = n;
+		if (n < 0)
+			num = -1 * num;
+		while (num > 0) {
+			if (num % 2 == 0) {
+				x = x * x;
+				num /= 2;
+			} else {
+				powerProduct *= x;
+				num -= 1;
+			}
+		}
+		if (n < 0)
+			powerProduct = (double) 1.0 / (double) powerProduct;
+		return powerProduct;
 	}
 
 	// Partially Correct Solution - 291 / 305 test cases passed.
 	// Time Limit Exceeded
 
-	public static double myPow(double x, int n) {
+	public static double myPowV3(double x, int n) {
 		double powerProduct = 1.0;
 		if (n > 0) {
 			for (int i = 1; i <= n; i++) {
